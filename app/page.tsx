@@ -2,7 +2,6 @@
 // app/page.tsx
 import Flashcards from "@/components/Flashcards"
 import Quiz from "@/components/Quiz"
-
 import ReactMarkdown from "react-markdown"
 import { useState, useRef, useEffect } from "react"
 

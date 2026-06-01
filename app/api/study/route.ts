@@ -8,7 +8,12 @@ export const maxDuration = 60;
 async function extractFromPDF(buffer: ArrayBuffer): Promise<string> {
   const { extractText } = await import("unpdf");
   const result = await extractText(new Uint8Array(buffer));
-const raw = typeof result === "string" ? result : (result as { text?: string })?.text ?? "";
+const raw =
+  typeof result === "string"
+    ? result
+    : Array.isArray(result.text)
+      ? result.text.join("\n")
+      : result.text ?? "";
   return String(raw);
 }
 

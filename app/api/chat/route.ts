@@ -1,6 +1,6 @@
 // app/api/chat/route.ts
 // Handles AI chat about the uploaded document
-import ReactMarkdown from "react-markdown"
+
 import { NextResponse } from "next/server"
 import OpenAI from "openai"
 

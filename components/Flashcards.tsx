@@ -1,5 +1,9 @@
+"use client"
+
+import { useState } from "react"
+
 // ─── Flashcards ────────────────────────────────────────────────────────────────
-export default function Flashcards({ content, c }: { content: string; c: typeof T.light }) {
+export default function Flashcards({ content, c }: { content: string; c: any }) {
   const [current, setCurrent] = useState(0)
   const [flipped, setFlipped] = useState(false)
 

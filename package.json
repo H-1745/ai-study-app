@@ -3,12 +3,13 @@
   "name": "ai-study-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+}
+,
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "next": "16.2.6",
