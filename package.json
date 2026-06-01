@@ -1,12 +1,13 @@
 {
+  "homepage": "https://H-1745.github.io/ai-study-app",
   "name": "ai-study-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
@@ -28,6 +29,7 @@
     "autoprefixer": "^10.5.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.15",
     "tailwindcss": "^4.3.0",
     "typescript": "^5"
